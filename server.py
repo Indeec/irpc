@@ -89,16 +89,3 @@ class IRPCServer:
 				pass
 		else:
 			raise NoSuchMethod
-
-
-def test(a,b):
-	print "hi nigga"
-	return a + b
-
-t = IRPCServer()
-t.registerProcedure(test)
-
-try:
-	t.mainLoop()
-except KeyboardInterrupt:
-	pass

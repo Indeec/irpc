@@ -71,7 +71,3 @@ class IRPCClient:
 				raise ProcListError
 		except socket.error:
 			print "Error sending data"
-
-
-t = IRPCClient()
-print t.test("s","2")
